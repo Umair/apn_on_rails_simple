@@ -18,15 +18,6 @@ class APN::Notification < APN::Base
   include ::ActionView::Helpers::TextHelper
   extend ::ActionView::Helpers::TextHelper
       
-      field :errors_nb, :type => Integer, :default => 0 # used for storing errors from apple feedbacks
-      field :device_language, :type => String# if you don't want to send localized strings
-      field :sound, :type => String
-      field :alert, :type => String
-      field :badge, :type => Integer
-      field :custom_properties, :type => Hash
-      field :sent_at, :type => Time
-      field :created_at, :type => Time
-      field :updated_at, :type => Time
 
   #serialize :custom_properties
 
@@ -129,7 +120,7 @@ class APN::Notification < APN::Base
           end
           puts "8"
         end
-      puts "9"
+        puts "9"
       end
       puts "10"
     end
